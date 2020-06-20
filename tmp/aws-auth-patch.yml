@@ -1,7 +1,7 @@
 apiVersion: v1
 data:
   mapRoles: |
-    - rolearn: arn:aws:iam::679753243804:role/UdacityFlaskDeployCBKubectlRole
+    - rolearn: arn:aws:iam::679753243804:role/eksctl-simple-jwt-api-nodegroup-n-NodeInstanceRole-KD7R1N5NBXAX
       username: system:node:{{EC2PrivateDNSName}}
       groups:
         - system:masters
@@ -27,9 +27,9 @@ metadata:
           f:kubectl.kubernetes.io/last-applied-configuration: {}
     manager: kubectl.exe
     operation: Update
-    time: "2020-06-20T13:45:22Z"
+    time: "2020-06-20T15:17:27Z"
   name: aws-auth
   namespace: kube-system
-  resourceVersion: "42352"
+  resourceVersion: "54516"
   selfLink: /api/v1/namespaces/kube-system/configmaps/aws-auth
   uid: db9e410a-1a8f-4e88-9e1e-6780c4674c29
